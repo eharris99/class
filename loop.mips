@@ -1,0 +1,7 @@
+#Sample program that loops from 10 down to 0
+ADDI $s0, $zero, 0 #set s0 to 0
+ADDI $s1, $zero, 50  #use to increment counter, $s0
+AGAIN: ADDI $s0, $s0, 5
+BEQ 50, $zero, DONE
+J AGAIN
+DONE:  #To break out of the loop
